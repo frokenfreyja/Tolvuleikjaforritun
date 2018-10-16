@@ -1,0 +1,93 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Breakout</title>
+    <style type="text/css">
+        html {
+          background-color: black;
+        }
+        .body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        .description span {
+          display: inline-block;
+          width: 30px;
+          height: 18px;
+        }
+        .message-container {
+          margin-top: 15px;
+          font-size: 15px;
+          font-family: Arial, Helvetica, sans-serif;
+          position: absolute;
+          right: 20px;
+        }
+        h2 {
+          font-weight: bold;
+        }
+        .description div span:nth-child(2) {
+            width: 150px;
+            margin-left: 10px;
+            height: 32px;
+        }
+        p, span, .description {
+          color: white;
+        }
+        canvas {
+          margin: 0 0 0 200px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="message-container">
+      <div class="description">
+        <h2>HOW TO:</h2>
+        <p>Use arrow keys to move the paddle <br> and spacebar to fire the ball</p>
+        <br>
+        <h2>POWER-UPS:</h2>
+          <div><span style="background: #66FF66"></span><span>Increase ball speed</span></div>
+          <div><span style="background: #FD0E35"></span><span>Decrease ball speed</span></div>
+          <div><span style="background: #FFFF31"></span><span>Increase paddle size</span></div>
+          <div><span style="background: #0048BA"></span><span>Decrease paddle size</span></div>
+          <div><span style="background: white"></span><span>Free extra life</span></div>  
+          <div><span style="background: #FF9933"></span><span>Superman effect</span></div>
+          <br>
+        <h2>SONG:</h2>
+        <p>Roygbiv by Boards Of Canada</p>
+      </div>
+    </div>
+    /*
+	<canvas id="myCanvas" width="900" height="700"
+		style="border: 10px solid orchid;">
+	Sorry, but your browser does not support the HTML5 canvas tag.
+  </canvas>
+  <audio id="gameOver">
+    <source src="gameover.wav" type="audio/wav" />
+    </audio>
+	<audio id="gameWin">
+    <source src="win.wav" type="audio/wav" />
+    </audio>
+	<audio id="powerUp">
+    <source src="powerup.wav" type="audio/wav" />
+    </audio>
+  <audio id="gameSong">
+    <source src="gamesong.wav" type="audio/wav" />
+    </audio>
+
+    <script src="utils.js"></script>
+    <script src="g_keys.js"></script>
+    <script src="Paddle.js"></script>
+    <script src="g_ball.js"></script>
+    <script src="brick.js"></script>
+    <script src="powerup.js"></script>
+    <script src="g_main.js"></script>
+    <script src="update.js"></script>
+    <script src="render.js"></script>
+    <script src="PONG.js"></script>
+  </body>
+</html>
